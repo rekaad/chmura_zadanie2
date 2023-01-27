@@ -1,0 +1,8 @@
+REDIS_HOST = multifib-redis.bfe0ih.ng.0001.use1.cache.amazonaws.com
+REDIS_PORT = 6379
+
+PGUSER = postgres
+PGHOST = multifib-postgres.crxqj8nwb7kr.us-east-1.rds.amazonaws.com
+PGDATABASE = fibvalues
+PGPASSWORD = postgres
+PGPORT = 5432
