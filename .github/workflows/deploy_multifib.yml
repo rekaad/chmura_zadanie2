@@ -1,5 +1,5 @@
 
-name: Deploy multifib on EBS AWS
+name: Deploy Rmmultifib on EBS AWS
 
 on:
   workflow_dispatch:
