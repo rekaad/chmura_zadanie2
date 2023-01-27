@@ -1,11 +1,11 @@
 version: "3"
 services:
   client:
-    image: "reekad/lab11:fib-client"
+    image: "spg51/lab:fib-client"
     mem_limit: 128m
     hostname: client
   server:
-    image: "reekad/lab11:fib-server"
+    image: "spg51/lab:fib-server"
     mem_limit: 128m
     hostname: api
     environment:
@@ -17,14 +17,14 @@ services:
       - PGPASSWORD=$PGPASSWORD
       - PGPORT=$PGPORT
   worker:
-    image: "reekad/lab11:fib-worker"
+    image: "spg51/lab:fib-worker"
     mem_limit: 128m
     hostname: worker
     environment:
       - REDIS_HOST=$REDIS_HOST
       - REDIS_PORT=$REDIS_PORT
   nginx:
-    image: "reekad/lab1:fib-nginx"
+    image: "spg51/lab:fib-nginx"
     mem_limit: 128m
     hostname: nginx
     ports:
