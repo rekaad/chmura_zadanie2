@@ -22,7 +22,7 @@ jobs:
             image: reekad/lab11:fib-worker
           - dockerfile: ./Dockerfile
             context: nginx
-            image: reekad/lab11:fib-router  
+            image: reekad/lab11:fib-nginx  
     
     steps:
 
